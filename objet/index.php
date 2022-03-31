@@ -33,7 +33,8 @@
         if($user1->envoyerEmail('le titre','le texte du mail')){
             echo'<p>mail envoyé </p>';
         }else {
-            //echo '<p> mail non envoyé</p>';
+            
+            echo '<p> mail non envoyé</p>';
         }       
         
        
@@ -54,8 +55,9 @@
     <h2>Heritage</h2>
     <?php
     include_once("admin.class.php");
-    $admin1 = new Admin("Admin1","","");
-    my_var_dump($admin1);
+    $admin = new Admin("Admin1","admin1@gmail.com","ADM");
+    my_var_dump($admin);
+    $admin->supprimerUser($user1);
     ?>
 </body>
 </html>

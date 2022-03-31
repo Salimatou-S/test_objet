@@ -2,7 +2,7 @@
 
 class User {
     //propriétés
-    private $pseudo;
+    protected $pseudo;//on passe de private a protected pour donner les droits a l'administrateur. Sinon l'admin herite du pseudo sans droit
     private $email;
     private $signature;
     private $actif;
